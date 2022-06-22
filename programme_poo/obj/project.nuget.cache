@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RiPyUb1xM4X8wJcXc0rJk0C6bErU5GE+cuT1lMShLD4XOF8Fwu/fyt3u0gNirkY5Uap8VaOywpv1S+bq9Zhug==",
+  "dgSpecHash": "Sn8kuffhl6EWuwJdLrOX+skY66AbgHxoAVRSk57+6SBfK95ZhCotUelZ+CIPfAZz0jNqL+tQ9Rwnx4qUY/Gb/w==",
   "success": true,
   "projectFilePath": "/Users/dodobo/Documents/csharp/learnchsarp/programme_poo/programme_poo.csproj",
-  "expectedPackageFiles": [
-    "/Users/dodobo/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/Users/dodobo/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.26/microsoft.netcore.app.host.osx-x64.3.1.26.nupkg.sha512",
-    "/Users/dodobo/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

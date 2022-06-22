@@ -8,26 +8,26 @@ namespace programme_poo
     {
         static int nombreDePersonnes = 0;
 
-        public string nom;
-        int age;
-        string emploi;
+        public string nom { get; init; }
+       public int age { get; init; }
+        public string emploi { get; init; }
         int numeroPersonne;
 
 
-        public Personne(string nom, int age, string emploi)
+        public Personne (string nom, int age, string emploi = null) : this()
         {
             this.nom = nom;
             this.age = age;
             this.emploi = emploi;
 
+       
+        }
+
+        public Personne ()
+        {
             nombreDePersonnes++;
 
             this.numeroPersonne = nombreDePersonnes;
-        }
-
-        public Personne (string nom, int age) : this(nom, age, null)
-        {
-         
         }
 
 
@@ -82,27 +82,29 @@ namespace programme_poo
             Personne personne2 = new Personne("Jacques", 35, "Professeur");
             personne2.Afficher();*/
 
-            var personnes = new List<Personne> {
-                new Personne("Paul", 30, "Développeur"),
-                new Personne("Jacques", 35, "Professeur"),
-                new Personne("David", 20, "Etudiant"),
-                new Personne("Juliette", 8),
-            };
+            //var personnes = new List<Personne> {
+            //    new Personne("Paul", 30, "Développeur"),
+            //    new Personne("Jacques", 35, "Professeur"),
+            //    new Personne("David", 20, "Etudiant"),
+            //    new Personne("Juliette", 8),
+            //};
 
-            personnes = personnes.OrderBy(p => p.nom).ToList();
+            //personnes = personnes.OrderBy(p => p.nom).ToList();
 
-            foreach (var personne in personnes)
-            {
-                personne.Afficher();
-            }
+            //foreach (var personne in personnes)
+            //{
+            //    personne.Afficher();
+            //}
 
-            Personne.AfficherNombreDePersonnes(); 
+            //Personne.AfficherNombreDePersonnes();
 
-           // var personne1 = new Personne("Paul", 30);
-           // personne1.Afficher();
+            var personne1 = new Personne() { age = 30, nom = "toto", emploi = "dev"};
+
+            
+            personne1.Afficher();
 
 
-            // EMPLOI : (non spécifié)
+       
         }
     }
 }

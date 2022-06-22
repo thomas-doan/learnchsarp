@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{DCFF9DC8-5A92-4478-9ECD-178E491F2F28}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.programme__poo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="programme_poo/Program.cs">
     <Files>
-      <File FileName="programme_poo/Program.cs" Line="96" Column="34" />
+      <File FileName="programme_poo/Program.cs" Line="82" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,5 +19,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
