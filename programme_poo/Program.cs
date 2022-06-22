@@ -8,11 +8,14 @@ namespace programme_poo
     class Enfant : Etudiant
     {
         private string ClasseEcole;
+        
+        Dictionary<string, float> notesDeLenfant;
 
-        public Enfant(string nom, int age) : base(nom, age, null)
+        public Enfant(string nom, int age, Dictionary<string, float> notesDeLenfant = null) : base(nom, age, null)
         {
             this.nom = nom;
             this.age = age;
+            this.notesDeLenfant = notesDeLenfant;
         }
 
         private void DeterminerLaClasse(int age)
@@ -44,8 +47,17 @@ namespace programme_poo
       
             
                 AfficherProfesseurPrincipal();
-            
 
+            
+            if ((notesDeLenfant != null)&&(notesDeLenfant.Count > 0))
+            {
+
+                Console.WriteLine("Notes moyennes");
+                foreach (var item in notesDeLenfant)
+                {
+                    Console.Write($"    {item.Key}: {item.Value}/10");
+                }
+            }
 
         }
     }
@@ -222,8 +234,16 @@ namespace programme_poo
             // etudiant.professeurPrincipal = new Personne("Jacques", 99, "professeur");
             etudiant.Afficher();
 
-            var petitEnfant = new Enfant("sophie", 8) { professeurPrincipal = new Personne("Jacques", 99, "professeur")};
-          
+            //var notes = new Dictionary<string, float>();
+            //notes.Add("math", (float)9.3);
+            //notes.Add("francais", (float)6.3);
+            //notes.Add("anglais", (float)5.4);
+
+            //var petitEnfant = new Enfant("sophie", 8, new Dictionary<string, float> { { "math", 9f}, { "francais", 6.5f }, { "anglais", 4.3f } }) { professeurPrincipal = new Personne("Jacques", 99, "professeur")};
+            //var petitEnfant = new Enfant("sophie", 8) { professeurPrincipal = new Personne("Jacques", 99, "professeur") };
+            var petitEnfant = new Enfant("sophie", 8, new Dictionary<string, float> {}) { professeurPrincipal = new Personne("Jacques", 99, "professeur") };
+
+
             petitEnfant.Afficher();
 
         }
