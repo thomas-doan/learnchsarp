@@ -4,34 +4,45 @@ using System.Linq;
 
 namespace programme_poo
 {
+
+    class Etudiant : Personne
+    {
+        string infoEtudes;
+        public Etudiant(string nom, int age) : base(nom, age, "Etudiant")
+        {
+
+        }
+
+        // Etudiant en école d'ingénieur informatique
+
+        public override void Afficher()
+        {
+            Console.WriteLine($"Afficher etudiant {nom}");
+        }
+    }
+
     class Personne
     {
         static int nombreDePersonnes = 0;
 
-        public string nom { get; init; }
-       public int age { get; init; }
-        public string emploi { get; init; }
+        protected string nom;
+        protected int age;
+        protected string emploi;
+
         int numeroPersonne;
 
 
-        public Personne (string nom, int age, string emploi = null) : this()
+        public Personne(string nom, int age, string emploi = null)
         {
             this.nom = nom;
             this.age = age;
             this.emploi = emploi;
 
-       
-        }
-
-        public Personne ()
-        {
             nombreDePersonnes++;
-
             this.numeroPersonne = nombreDePersonnes;
         }
 
-
-        public void Afficher()
+        public virtual void Afficher()
         {
             Console.WriteLine("PERSONNE N°" + numeroPersonne);
             Console.WriteLine("  NOM : " + nom);
@@ -54,13 +65,6 @@ namespace programme_poo
 
     class Program
     {
-        /*static void AfficherInfosPersonne(string nom, int age, string emploi)
-        {
-            Console.WriteLine("NOM : " + nom);
-            Console.WriteLine("  AGE : " + age + " ans");
-            Console.WriteLine("  EMPLOI : " + emploi);
-        }*/
-
         static void Main(string[] args)
         {
             // nom, age, emploi
@@ -82,29 +86,30 @@ namespace programme_poo
             Personne personne2 = new Personne("Jacques", 35, "Professeur");
             personne2.Afficher();*/
 
-            //var personnes = new List<Personne> {
-            //    new Personne("Paul", 30, "Développeur"),
-            //    new Personne("Jacques", 35, "Professeur"),
-            //    new Personne("David", 20, "Etudiant"),
-            //    new Personne("Juliette", 8),
-            //};
+            /*var personnes = new List<Personne> {
+                new Personne("Paul", 30, "Développeur"),
+                new Personne("Jacques", 35, "Professeur"),
+                new Personne("David", 20, "Etudiant"),
+                new Personne("Juliette", 8, "CP"),
+            };
 
             //personnes = personnes.OrderBy(p => p.nom).ToList();
 
-            //foreach (var personne in personnes)
-            //{
-            //    personne.Afficher();
-            //}
+            foreach (var personne in personnes)
+            {
+                personne.Afficher();
+            }
 
-            //Personne.AfficherNombreDePersonnes();
+            Personne.AfficherNombreDePersonnes(); */
 
-            var personne1 = new Personne() { age = 30, nom = "toto", emploi = "dev"};
+            //var personne1 = new Personne("Paul", 30);
+            //var personne1 = new Personne() { age = 30, nom = "Paul", emploi="Ingénieur" };
+            //var personne2 = new Personne("Jacques", 35, "Professeur");
 
-            
-            personne1.Afficher();
+            var etudiant = new Etudiant("David", 20);
+            //var etudiant = new Etudiant("Jacques", 35, "Professeur");
+            etudiant.Afficher();
 
-
-       
         }
     }
 }
