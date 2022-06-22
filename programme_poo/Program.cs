@@ -7,29 +7,78 @@ namespace programme_poo
 
     class Etudiant : Personne
     {
-        string infoEtudes;
-        public Etudiant(string nom, int age) : base(nom, age, "Etudiant")
-        {
+       protected string infoEtudes;
 
+
+
+        public Personne professeurPrincipal { get; init; }
+      
+
+      
+
+        public Etudiant(string nom, int age, string infoEtudes) : base(nom, age, "Etudiant")
+        {
+            this.infoEtudes = infoEtudes;
+ 
         }
 
         // Etudiant en école d'ingénieur informatique
 
         public override void Afficher()
         {
-            Console.WriteLine($"Afficher etudiant {nom}");
+            Console.WriteLine("PERSONNE N°" + numeroPersonne);
+            Console.WriteLine("  NOM : " + nom);
+            Console.WriteLine("  AGE : " + age + " ans");
+     
+            if (emploi != null)
+            {
+                Console.WriteLine($"  etudiant en {infoEtudes} " );
+            }
+
+            if (professeurPrincipal != null)
+            {   Console.WriteLine($"le professeur est : ");
+                professeurPrincipal.Afficher();
+            }
         }
     }
 
     class Personne
     {
+
         static int nombreDePersonnes = 0;
 
-        protected string nom;
-        protected int age;
+        string _nom;
+
+        public string nom
+        {
+            get
+            {
+                return _nom;
+            }
+
+            set
+            {
+                _nom = value;
+            }
+        }
+
+        int _age;
+        public int age
+        {
+            get
+            {
+                return _age;
+            }
+
+            set
+            {
+                _age = value;
+            }
+        }
+
         protected string emploi;
 
-        int numeroPersonne;
+       protected int numeroPersonne;
 
 
         public Personne(string nom, int age, string emploi = null)
@@ -44,17 +93,20 @@ namespace programme_poo
 
         public virtual void Afficher()
         {
-            Console.WriteLine("PERSONNE N°" + numeroPersonne);
-            Console.WriteLine("  NOM : " + nom);
-            Console.WriteLine("  AGE : " + age + " ans");
+            AfficherNomEtAge();
             if (emploi == null)
             {
                 Console.WriteLine("  Aucun emploi spécifié");
             }
-            else
-            {
-                Console.WriteLine("  EMPLOI : " + emploi);
-            }
+
+        }
+
+        protected void AfficherNomEtAge()
+        {
+            Console.WriteLine("PERSONNE N°" + numeroPersonne);
+            Console.WriteLine("  NOM : " + nom);
+            Console.WriteLine("  AGE : " + age + " ans");
+   
         }
 
         public static void AfficherNombreDePersonnes()
@@ -86,30 +138,33 @@ namespace programme_poo
             Personne personne2 = new Personne("Jacques", 35, "Professeur");
             personne2.Afficher();*/
 
-            /*var personnes = new List<Personne> {
-                new Personne("Paul", 30, "Développeur"),
-                new Personne("Jacques", 35, "Professeur"),
-                new Personne("David", 20, "Etudiant"),
-                new Personne("Juliette", 8, "CP"),
-            };
+            //var personnes = new List<Personne> {
+            //    new Personne("Paul", 30, "Développeur"),
+            //    new Personne("Jacques", 35, "Professeur"),
+            //    new Etudiant("David", 20, "ecole d'ingenieur"),
+            //    new Personne("Juliette", 8)
+            //}; 
 
             //personnes = personnes.OrderBy(p => p.nom).ToList();
 
-            foreach (var personne in personnes)
-            {
-                personne.Afficher();
-            }
+            //foreach (var personne in personnes)
+            //{
+            //    personne.Afficher();
+            //}
 
-            Personne.AfficherNombreDePersonnes(); */
+            //Personne.AfficherNombreDePersonnes();
 
             //var personne1 = new Personne("Paul", 30);
             //var personne1 = new Personne() { age = 30, nom = "Paul", emploi="Ingénieur" };
             //var personne2 = new Personne("Jacques", 35, "Professeur");
 
-            var etudiant = new Etudiant("David", 20);
-            //var etudiant = new Etudiant("Jacques", 35, "Professeur");
-            etudiant.Afficher();
 
+            var etudiant = new Etudiant("Dav", 20, "ecole d'ingenieur")
+            {
+                professeurPrincipal = new Personne("Jacques", 99, "professeur")
+            };
+           // etudiant.professeurPrincipal = new Personne("Jacques", 99, "professeur");
+            etudiant.Afficher();
         }
     }
 }
