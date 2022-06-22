@@ -5,6 +5,51 @@ using System.Linq;
 namespace programme_poo
 {
 
+    class Enfant : Etudiant
+    {
+        private string ClasseEcole;
+
+        public Enfant(string nom, int age) : base(nom, age, null)
+        {
+            this.nom = nom;
+            this.age = age;
+        }
+
+        private void DeterminerLaClasse(int age)
+        {
+                      switch (age)
+            {
+                     case 7 :
+                    ClasseEcole = "CP";
+                    break;
+
+                case 8:
+                    ClasseEcole = "CE1";
+                    break;
+
+                case 9:
+                    ClasseEcole = "CE2";
+                    break;
+
+            }
+        }
+
+        public override void Afficher()
+        {
+            AfficherNomEtAge();
+            DeterminerLaClasse(age);
+
+            Console.WriteLine($"enfant en classe de {ClasseEcole} ");
+
+      
+            
+                AfficherProfesseurPrincipal();
+            
+
+
+        }
+    }
+
     class Etudiant : Personne
     {
        protected string infoEtudes;
@@ -26,20 +71,31 @@ namespace programme_poo
 
         public override void Afficher()
         {
-            Console.WriteLine("PERSONNE N°" + numeroPersonne);
-            Console.WriteLine("  NOM : " + nom);
-            Console.WriteLine("  AGE : " + age + " ans");
-     
+            AfficherNomEtAge();
+
             if (emploi != null)
             {
                 Console.WriteLine($"  etudiant en {infoEtudes} " );
             }
 
-            if (professeurPrincipal != null)
-            {   Console.WriteLine($"le professeur est : ");
-                professeurPrincipal.Afficher();
-            }
+           
+                AfficherProfesseurPrincipal();
+            
+
         }
+
+
+            protected void AfficherProfesseurPrincipal()
+            {
+            if (professeurPrincipal != null)
+                {
+                    Console.WriteLine($"le professeur est : ");
+                professeurPrincipal.Afficher();
+
+                }
+            }
+
+
     }
 
     class Personne
@@ -161,10 +217,15 @@ namespace programme_poo
 
             var etudiant = new Etudiant("Dav", 20, "ecole d'ingenieur")
             {
-                professeurPrincipal = new Personne("Jacques", 99, "professeur")
+                professeurPrincipal = new Personne("John", 99, "professeur au top")
             };
-           // etudiant.professeurPrincipal = new Personne("Jacques", 99, "professeur");
+            // etudiant.professeurPrincipal = new Personne("Jacques", 99, "professeur");
             etudiant.Afficher();
+
+            var petitEnfant = new Enfant("sophie", 8) { professeurPrincipal = new Personne("Jacques", 99, "professeur")};
+          
+            petitEnfant.Afficher();
+
         }
     }
 }
