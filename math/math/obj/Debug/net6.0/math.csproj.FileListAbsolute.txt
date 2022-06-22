@@ -1,0 +1,15 @@
+/Users/dodobo/Documents/csharp/math/math/bin/Debug/net6.0/math
+/Users/dodobo/Documents/csharp/math/math/bin/Debug/net6.0/math.deps.json
+/Users/dodobo/Documents/csharp/math/math/bin/Debug/net6.0/math.runtimeconfig.json
+/Users/dodobo/Documents/csharp/math/math/bin/Debug/net6.0/math.dll
+/Users/dodobo/Documents/csharp/math/math/bin/Debug/net6.0/math.pdb
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.csproj.AssemblyReference.cache
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.AssemblyInfoInputs.cache
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.AssemblyInfo.cs
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.csproj.CoreCompileInputs.cache
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.dll
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/refint/math.dll
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.pdb
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/math.genruntimeconfig.cache
+/Users/dodobo/Documents/csharp/math/math/obj/Debug/net6.0/ref/math.dll

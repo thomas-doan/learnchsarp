@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{8F040618-7E3E-41BD-840D-8443AD68CD4C}|Default">
+  <MonoDevelop.Ide.ItemProperties.nombreAleatoirMagique PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="nombreAleatoirMagique/Program.cs">
+    <Files>
+      <File FileName="nombreAleatoirMagique/Program.cs" Line="101" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="nombreAleatoirMagique" expanded="True">
+            <Node name="nombreAleatoirMagique" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
