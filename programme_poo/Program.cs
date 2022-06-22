@@ -14,7 +14,7 @@ namespace programme_poo
         int numeroPersonne;
 
 
-        public Personne(string nom, int age, string emploi = null)
+        public Personne(string nom, int age, string emploi)
         {
             this.nom = nom;
             this.age = age;
@@ -24,6 +24,12 @@ namespace programme_poo
 
             this.numeroPersonne = nombreDePersonnes;
         }
+
+        public Personne (string nom, int age) : this(nom, age, null)
+        {
+         
+        }
+
 
         public void Afficher()
         {
