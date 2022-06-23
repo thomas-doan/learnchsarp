@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace projet_eshop_pizza
 
@@ -7,9 +8,9 @@ namespace projet_eshop_pizza
     class Pizza
     {
        public string nom { get; init; }
-        float prix { get; init; }
-        bool vegetarienne { get; init; }
-        List <string> ingredients;
+       public float prix { get; init; }
+       public bool vegetarienne { get; init; }
+       public List <string> ingredients { get; init; }
 
         public Pizza(string nom, float prix, bool vegetarienne, List<string> ingredients)
         {
@@ -112,18 +113,34 @@ class Program
             var liste_de_pizzas = new List<Pizza>
             {
                 new Pizza("4 fromages", 8.5f, false, new List<string>{"roquefort", "chevre", "conte", "gorgo"}),
-                new Pizza("SUPER Vege", 8f, true, new List<string>{"tomates", "salade", "haricot"}),
+                new Pizza("SUPER Vege", 3.5f, true, new List<string>{"tomates", "salade", "haricot"}),
                 new Pizza( "royal" ,9.5f, false, new List<string>{"sauce tomate", "jambon", "fromage"} ),
                 new Pizza("soLEIL du midi", 12.5f, true, new List<string>{"tomate", "basilic", "vinaigre", "gorgo"} ),
             };
 
+            liste_de_pizzas = liste_de_pizzas.OrderBy(i => i.prix).ToList();
+
+            // selection de pizza vegetarienne
+            //liste_de_pizzas = liste_de_pizzas.Where(i => i.vegetarienne).ToList();
+
+            //
+            liste_de_pizzas = liste_de_pizzas.Where(i => i.ingredients.Where(j => j.ToLower().Contains("tomate")).ToList().Count > 0).ToList();
+          
+
+
+
+
+              
 
             foreach (var pizza in liste_de_pizzas)
             {
                 pizza.Afficher();
             }
+             
 
-    }
+       
+
+        }
 
 
 
