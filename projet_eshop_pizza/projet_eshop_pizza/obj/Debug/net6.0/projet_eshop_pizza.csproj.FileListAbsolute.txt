@@ -1,0 +1,15 @@
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/bin/Debug/net6.0/projet_eshop_pizza
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/bin/Debug/net6.0/projet_eshop_pizza.deps.json
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/bin/Debug/net6.0/projet_eshop_pizza.runtimeconfig.json
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/bin/Debug/net6.0/projet_eshop_pizza.dll
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/bin/Debug/net6.0/projet_eshop_pizza.pdb
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.csproj.AssemblyReference.cache
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.AssemblyInfoInputs.cache
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.AssemblyInfo.cs
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.csproj.CoreCompileInputs.cache
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.dll
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/refint/projet_eshop_pizza.dll
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.pdb
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/projet_eshop_pizza.genruntimeconfig.cache
+/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/obj/Debug/net6.0/ref/projet_eshop_pizza.dll
