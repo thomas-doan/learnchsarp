@@ -37,23 +37,30 @@ namespace projet_eshop_pizza
 
         private void AfficherIngredientsPizza()
         {
-           string nomFormate = FormaterNomDePizzaPremiereLettreMajuscule(nom);
+           string nomFormate = FormaterPremiereLettreMajuscule(nom);
 
             string badgeVegetarienne = "(V)";
 
             if(!vegetarienne)
             {
                  badgeVegetarienne = "";
-            } 
-            
-                Console.WriteLine($"{nomFormate} {badgeVegetarienne} - {prix}€");
-                Console.WriteLine($"{string.Join(", ", ingredients)}");
+            }
+
+            List<string> listeIngredientsFormate = FormaterListDeNomsPremieresLettresMaj(ingredients);
+
+            var ingredientsNomFormate = new List<string>();
+
+      
+
+
+            Console.WriteLine($"{nomFormate} {badgeVegetarienne} - {prix}€");
+                Console.WriteLine($"{string.Join(", ", listeIngredientsFormate)}");
                 Console.WriteLine();
          
             
         }
 
-        private static string FormaterNomDePizzaPremiereLettreMajuscule(string data_nom_pizza)
+        private static string FormaterPremiereLettreMajuscule(string data_nom_pizza)
         {
             
 
@@ -66,7 +73,33 @@ namespace projet_eshop_pizza
             return resultat;
 
         }
-        
+
+        private static List<string> FormaterListDeNomsPremieresLettresMaj(List<string> ingredients)
+        {
+            // version classique sans utiliser le Link
+            //var ingredientsNomFormate = new List<string>();
+
+            // foreach (var data in ingredients)
+            // {
+
+            //     ingredientsNomFormate.Add(FormaterPremiereLettreMajuscule(data));
+            // }
+
+            // return ingredientsNomFormate;
+
+
+
+            //AVEC Link ressemble fortement a JS
+
+            //var ingredientsNomFormate = new List<string>();
+            var  ingredientsNomFormate = ingredients.Select(i => FormaterPremiereLettreMajuscule(i)).ToList();
+
+            // avec Link et select la nouvelle variable prend le type donc List <string> dans ce cas précis.
+
+            return ingredientsNomFormate;
+
+        }
+
 
     }
 
@@ -79,8 +112,8 @@ class Program
             var liste_de_pizzas = new List<Pizza>
             {
                 new Pizza("4 fromages", 8.5f, false, new List<string>{"roquefort", "chevre", "conte", "gorgo"}),
-                new Pizza("SUPER Vege", 8f, true, new List<string>{"tomate", "salade", "haricot"}),
-                new Pizza( "royal" ,9.5f, false, new List<string>{"tomate", "jambon", "fromage"} ),
+                new Pizza("SUPER Vege", 8f, true, new List<string>{"tomates", "salade", "haricot"}),
+                new Pizza( "royal" ,9.5f, false, new List<string>{"sauce tomate", "jambon", "fromage"} ),
                 new Pizza("soLEIL du midi", 12.5f, true, new List<string>{"tomate", "basilic", "vinaigre", "gorgo"} ),
             };
 
