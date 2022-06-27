@@ -1,4 +1,30 @@
 ﻿<Properties StartupConfiguration="{CF428450-D0DE-4127-9C0F-EF795FFA5801}|Default">
-  <MonoDevelop.Ide.ItemProperties.projet__eshop__pizza FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.projet__eshop__pizza PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="projet_eshop_pizza/Program.cs">
+    <Files>
+      <File FileName="projet_eshop_pizza/Program.cs" Line="65" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="projet_eshop_pizza" expanded="True">
+            <Node name="projet_eshop_pizza" expanded="True">
+              <Node name="Dependencies" expanded="True" selected="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
 </Properties>

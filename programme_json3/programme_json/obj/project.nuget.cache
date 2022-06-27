@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "MOQOQS8s+zwhMnVZSTLf2DlShekrzwJvUfFB/9N6Z6y7W/2RLZ9iETi7yMwNwf9PxU4Y3g4Ne6Acu6wWW5RJcw==",
+  "success": true,
+  "projectFilePath": "/Users/dodobo/Documents/csharp/learnchsarp/programme_json3/programme_json/programme_json.csproj",
+  "expectedPackageFiles": [
+    "/Users/dodobo/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/dodobo/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/dodobo/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512",
+    "/Users/dodobo/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

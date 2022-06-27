@@ -4,13 +4,67 @@ using System.Linq;
 namespace projet_eshop_pizza
 
 {
+    class PizzaPersonnalisee : Pizza
+
+    {
+        float prixfinal = 0;
+        static int numeroPizzaPerso = 1;
+
+        public PizzaPersonnalisee() : base("personnalisée", 5, false, null)
+        {
+            
+            this.nom = $"{nom} n° {numeroPizzaPerso++}";
+        
+            ingredients = new List<string>();
+
+          
+
+            while (true)
+            {
+            Console.WriteLine($"Rentrez un ingrédient pour la pizza personnalisée n° {nom} : (ENTER pour terminier la saisie) ");
+      
+                var ingredientRentreParUtilisateur = Console.ReadLine();
+
+              
+
+                if (string.IsNullOrWhiteSpace(ingredientRentreParUtilisateur))
+                {
+                  
+                    break;
+                }
+
+                if (ingredients.Contains(ingredientRentreParUtilisateur))
+                {
+                    Console.WriteLine("ingredient identique");
+
+                }
+                else
+                {
+                
+                   
+             
+                ingredients.Add(ingredientRentreParUtilisateur);
+              
+                Console.WriteLine($"votre liste d'ingrédient rentrée : {string.Join(", ", ingredients)}");
+                Console.WriteLine();
+                   
+
+
+
+                }
+            }
+
+            prix = 5 + (ingredients.Count * 1.5f);
+        }
+
+    }
 
     class Pizza
     {
-       public string nom { get; init; }
-       public float prix { get; init; }
+        protected string nom;
+        protected float prix;
        public bool vegetarienne { get; init; }
-       public List <string> ingredients { get; init; }
+       public List <string> ingredients { get; protected set; }
 
         public Pizza(string nom, float prix, bool vegetarienne, List<string> ingredients)
         {
@@ -116,15 +170,17 @@ class Program
                 new Pizza("SUPER Vege", 3.5f, true, new List<string>{"tomates", "salade", "haricot"}),
                 new Pizza( "royal" ,9.5f, false, new List<string>{"sauce tomate", "jambon", "fromage"} ),
                 new Pizza("soLEIL du midi", 12.5f, true, new List<string>{"tomate", "basilic", "vinaigre", "gorgo"} ),
+                 new PizzaPersonnalisee(),
+                 new PizzaPersonnalisee(),
             };
 
-            liste_de_pizzas = liste_de_pizzas.OrderBy(i => i.prix).ToList();
+            //liste_de_pizzas = liste_de_pizzas.OrderBy(i => i.prix).ToList();
 
             // selection de pizza vegetarienne
             //liste_de_pizzas = liste_de_pizzas.Where(i => i.vegetarienne).ToList();
 
-            //
-            liste_de_pizzas = liste_de_pizzas.Where(i => i.ingredients.Where(j => j.ToLower().Contains("tomate")).ToList().Count > 0).ToList();
+            //prog fonctionnelle
+            //liste_de_pizzas = liste_de_pizzas.Where(i => i.ingredients.Where(j => j.ToLower().Contains("tomate")).ToList().Count >0).ToList();
           
 
 

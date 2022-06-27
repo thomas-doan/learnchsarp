@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DbungS1uXjRXQqcjYIY7tZikkkv4Dbhhy50KtE2IjxqRRE+p402RFCb+e5J4mBmrd8s2ECeWjdvHTAz9CWTcgA==",
+  "dgSpecHash": "wZAXYctdZTwgJz46p6vofbYpGDqAqKkduQ0ssIi2li+gZLDAtBNK8gqjaAQemr7a/R2fpozyopxhWltWQV34Gg==",
   "success": true,
   "projectFilePath": "/Users/dodobo/Documents/csharp/learnchsarp/projet_eshop_pizza/projet_eshop_pizza/projet_eshop_pizza.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/dodobo/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

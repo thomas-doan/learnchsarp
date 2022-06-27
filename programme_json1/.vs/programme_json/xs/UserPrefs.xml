@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{B858A249-F6B4-4BBC-BD6E-32B1838496F5}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="programme_json/Program.cs">
+    <Files>
+      <File FileName="programme_json/Program.cs" Line="65" Column="67" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="programme_json" expanded="True">
+            <Node name="programme_json" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.programme__json PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
